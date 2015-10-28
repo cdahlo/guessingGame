@@ -83,5 +83,18 @@ var name = prompt('What is your name?');
       var no=no+1;
       console.log('You got this wrong because you answered '+question5);
     }
+    var question6 = prompt('How many days is this 201 class?');
 
+    while (correct === false) {
+      if (parseInt(question6) === 20) {
+        correct = true;
+        var yes=yes+1;
+      } else if (parseInt(question6) < 20) {
+        question4 = prompt('It is more than that! Try again!');
+      } else {
+        question4 = prompt('It is less than that! try again!');
+      }
+    }
+        alert('That is correct!');
+        
     alert(name+' you got '+yes+' correct and '+no+' wrong');
